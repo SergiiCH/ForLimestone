@@ -1,0 +1,27 @@
+﻿@model CompaniesIPListModel
+
+@foreach (var c in Model.CompanyUsersIP)
+{
+    <div class="well">
+        <h3>
+            <strong>@c.Company</strong>
+        </h3>
+            <table  class="table" table-striped table-bordered">
+                <caption><strong>White IP address</strong></caption>
+                <tr>
+                    <th></th>
+                </tr>
+
+                @foreach (var ip in Model.IPAddress)
+                {
+                   <tr>
+                       <td>@ip.IPaddress</td>
+                   </tr>
+
+                }
+
+            </table> 
+    </div>
+}
+
+ 

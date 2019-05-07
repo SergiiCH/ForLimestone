@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" asp-href-include="lib/bootstrap/dist/css/*.min.css" />
+    <title>Test project for Limestone Digital</title>
+</head>
+<body>
+ 
+    <div class="navbar navbar-inverse" role="navigation">
+        <a class="navbar-brand">Test project for Limestone Digital</a>
+    </div>
+
+    <div class="row panel">
+        <div  id="categories" class="col-xs-3">
+            <img align="left" src="~/images/Limestone.png"  asp-append-version="true" style="height:100px;width:300px"/>
+        </div>
+        <div class="col-xs-8">
+            @RenderBody()           
+        </div>
+    </div>
+</body>
+</html>

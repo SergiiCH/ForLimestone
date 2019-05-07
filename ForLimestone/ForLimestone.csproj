@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Новая папка\**" />
+    <Compile Remove="Новая папка1\**" />
+    <Compile Remove="Новая папка2\**" />
+    <Content Remove="Controllers\Новая папка\**" />
+    <Content Remove="Новая папка1\**" />
+    <Content Remove="Новая папка2\**" />
+    <EmbeddedResource Remove="Controllers\Новая папка\**" />
+    <EmbeddedResource Remove="Новая папка1\**" />
+    <EmbeddedResource Remove="Новая папка2\**" />
+    <None Remove="Controllers\Новая папка\**" />
+    <None Remove="Новая папка1\**" />
+    <None Remove="Новая папка2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Language" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Tools" Version="1.0.0-preview4-final" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
